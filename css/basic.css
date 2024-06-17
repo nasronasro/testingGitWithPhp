@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.mainContent label, .mainContent legend{
+    font-size: 1.3rem;
+}
+.mainContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.mainContent form{
+    width: 50%;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=text],input[type=password]{
+    width: 50%;
+    display: block;
+    height: 30px;
+}
+
+input[type=submit]{
+    width: 20%;
+    height: 5vh;
+    border-radius: 10px;
+    border-image: linear-gradient(to right,#000000, #CCCCCC) 1;
+    background-color: white;
+    color : lightgreen;
+    font-size: 1.2rem;
+    
+    height: 30px;
+    transition : 0.5s;
+}
+input[type=submit]:hover{
+    width:25%;
+    border-radius: 10px;
+    border-image: linear-gradient(to right, #CCCCCC, #000000) 1;
+    cursor: pointer;
+    color:red;
+    height: 35px;
+    transition : 0.5s;
+}
+body{
+    background-image: linear-gradient(to right,#EEEEEE, #DDDDDD);
+}
+@media screen and (max-width : 500px) {
+    input[type=text],input[type=password]{
+        width: 100%;
+    }
+    input[type=submit]{
+        width: 80%;
+    }
+    input[type=submit]:hover{
+        width: 80%;
+    }
+}
